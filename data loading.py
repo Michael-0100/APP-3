@@ -9,8 +9,8 @@ files = [
 ]
 
 for data in files:
-  print(f‘data:’)
-  with open (data,'r', encoding=“utf-8“) as file:
+  print(f'data:')
+  with open (data,'r', encoding='utf-8') as file:
     reader = csv.reader(file, delimiter=';')
     for row in reader:
       print (row)
