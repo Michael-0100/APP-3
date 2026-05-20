@@ -14,3 +14,6 @@ for data in files:
     reader = csv.reader(file, delimiter=';')
     for row in reader:
       print (row)
+
+
+#testing brand
