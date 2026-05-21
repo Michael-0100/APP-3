@@ -16,3 +16,27 @@ for data in files:
       print (row)
 
 
+
+
+#--------- Sorting (Merge sort will be used)
+
+def merge_sort(list) 
+
+
+
+#------Policy definition #Policy 1 is baseline and takes all scores, time stamps and candidate ids
+#Policy 1
+def policy_1 ( )
+
+
+#Policy 2 corrects everything and deals with sort
+
+#--- Parcoursup mechanism
+def compute_call_orcer ( )
+grouped = group_by_program(apps)
+results = {} 
+
+
+# ---- Main code that actually runs algorithm and returns outputs
+Running_algorithm = 
+
