@@ -24,3 +24,25 @@ def load_programs(filename):
         for row in reader:
             programs[int(row["program_id"])] = int(row["capacity"])
     return programs
+
+
+def display_application(app):
+    #Sorting of data
+    print("--- Application ---")
+    print(f"  Candidate ID   : {app['candidate_id']}")
+    print(f"  Program ID     : {app['program_id']}")
+    print(f"  Score          : {app['score']}")
+    print(f"  Timestamp      : {app['timestamp']}")
+    print(f"  Scholarship    : {'Yes' if app['is_scholarship'] == 1 else 'No'}")
+    print(f"  High School ID : {app['hs_id']}")
+    print("-------------------")
+
+
+def get_applications_by_candidate(applications, candidate_id):
+   #Searches for canditate data and returns results.
+    results = []
+    for app in applications:
+        if app["candidate_id"] == candidate_id:
+            results.append(app)
+    return results
+
